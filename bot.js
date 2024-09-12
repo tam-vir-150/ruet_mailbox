@@ -22,7 +22,7 @@ module.exports = {
   sendMessage: (message, type) => {
     const channel = client.channels.cache.get(channels[type].id);
     if (channel) {
-        const msgg = `${message} \n\n To submit your vents or confessions go to https://ruet-mailbox.onrender.com/`
+        const msgg = `message:\n${message} \n\n To submit your vents or confessions go to https://ruet-mailbox.onrender.com/`
       channel.send(msgg);
     } else {
       console.error('Channel not found');
