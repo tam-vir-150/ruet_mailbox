@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js'); // Updated import
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
-const TOKEN = process.env[TOKEN];
+const TOKEN = process.env["TOKEN"];
 const channels = {
     vent:{
         id: "1281351152440705086"
