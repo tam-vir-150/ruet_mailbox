@@ -23,7 +23,8 @@ module.exports = {
     console.log(channels[type].id)
     const channel = client.channels.cache.get(channels[type].id);
     if (channel) {
-      channel.send(message);
+        const msgg = `${message} \n\n To submit your vents or confessions go to https://ruet-mailbox.onrender.com/`
+      channel.send(msgg);
     } else {
       console.error('Channel not found');
     }
