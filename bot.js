@@ -20,7 +20,6 @@ client.login(TOKEN);
 
 module.exports = {
   sendMessage: (message, type) => {
-    console.log(channels[type].id)
     const channel = client.channels.cache.get(channels[type].id);
     if (channel) {
         const msgg = `${message} \n\n To submit your vents or confessions go to https://ruet-mailbox.onrender.com/`
