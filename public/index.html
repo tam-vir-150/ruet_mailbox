@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Opinion</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 8px;
+        }
+        body{
+            background: #131313;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+
+        }
+        label{
+            color: aliceblue;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        textarea{
+            background-color: #131313;
+            border: 2px solid plum;
+            border-radius: 4px;
+            width: 98%;
+            max-width: 600px;
+            height: 350px;
+            color: plum;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+        }
+        button{
+            height: 40px;
+            width: 100%;
+            max-width: 600px;
+            padding: 4px 8px;
+            background-color: plum;
+            color: aliceblue;
+            border: 0px;
+            border-radius: 4px;
+        }
+        textarea::placeholder{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: rgb(100, 62, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Ruet MailBox </h1>
+    <br />
+    <br />
+    <br />
+    <form id="opinionForm">
+        <h1>Mail type</h1>
+        <div><input type="radio" id="vent" name="type" value="vent" required>
+            <label for="vent">Vent</label>
+            <input type="radio" id="confess" name="type" value="confession" required>
+            <label for="confess">Confession</label></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <textarea id="opinion" rows="10" cols="50" placeholder="Write your opinion here..." required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
